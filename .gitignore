@@ -1,0 +1,93 @@
+#################################
+# OS Files
+#################################
+.DS_Store
+Thumbs.db
+
+#################################
+# KiCad Generated Files
+#################################
+
+# Cache / autosave
+*-cache.lib
+*-rescue.lib
+*-cache.kicad_sym
+*.autosave
+*.tmp
+*.bak
+
+# Backup files
+*-backup.kicad_sch
+*-backup.kicad_pcb
+
+# Lock files
+*.kicad_pcb.lck
+*.kicad_sch.lck
+
+# Plot / fabrication outputs
+*.gbr
+*.gerber
+*.drl
+*.gbl
+*.gbo
+*.gbp
+*.gbs
+*.gtl
+*.gto
+*.gtp
+*.gts
+*.d356
+*.pos
+*.rpt
+*.csv
+*.step
+*.stp
+
+# 3D cache
+*.wrl
+*.step-up
+
+# Simulation output
+*.raw
+
+#################################
+# ESP-IDF Build Files
+#################################
+
+build/
+sdkconfig.old
+sdkconfig.bak
+flasher_args.json
+project_description.json
+compile_commands.json
+
+# CMake
+CMakeFiles/
+CMakeCache.txt
+cmake_install.cmake
+
+#################################
+# Python / IDF tools
+#################################
+
+__pycache__/
+*.pyc
+*.pyo
+
+#################################
+# VSCode
+#################################
+
+.vscode/
+
+#################################
+# CLion
+#################################
+
+.idea/
+
+#################################
+# Logs
+#################################
+
+*.log
