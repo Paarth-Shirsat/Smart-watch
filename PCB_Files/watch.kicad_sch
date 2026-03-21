@@ -18329,7 +18329,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Inductor_SMD:L_0603_1608Metric"
 			(at 419.1 304.8 0)
 			(effects
 				(font
@@ -18834,7 +18834,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" "Inductor_SMD:L_0805_2012Metric_Pad1.05x1.20mm_HandSolder"
+		(property "Footprint" "Inductor_SMD:L_0603_1608Metric"
 			(at 315.722 306.07 90)
 			(effects
 				(font
@@ -21609,7 +21609,7 @@
 				)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Inductor_SMD:L_0603_1608Metric"
 			(at 105.41 218.44 0)
 			(effects
 				(font
@@ -25112,7 +25112,7 @@
 				)
 			)
 		)
-		(property "Footprint" "Library:PQFN50P200X200X80-10N"
+		(property "Footprint" "footprints:PQFN50P200X200X80-10N"
 			(at 99.06 298.45 0)
 			(effects
 				(font
@@ -25963,7 +25963,7 @@
 				)
 			)
 		)
-		(property "Footprint" "Library:14-OESIP"
+		(property "Footprint" "footprints:14-OESIP"
 			(at 161.29 303.53 0)
 			(effects
 				(font
@@ -28491,7 +28491,7 @@
 				)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Inductor_SMD:L_0603_1608Metric"
 			(at 107.95 55.88 0)
 			(effects
 				(font
@@ -29364,7 +29364,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" "Library:SOP65P640X120-8N"
+		(property "Footprint" "footprints:SOP65P640X120-8N"
 			(at 344.17 199.39 0)
 			(effects
 				(font
