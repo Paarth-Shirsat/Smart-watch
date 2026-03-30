@@ -1,0 +1,10 @@
+idf_component_register(
+    SRCS
+        "main.c"
+        "../src/bmp388.c"
+    INCLUDE_DIRS
+        "."
+        "../include"
+    REQUIRES
+        driver
+)
