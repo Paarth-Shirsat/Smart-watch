@@ -13604,16 +13604,6 @@
 	)
 	(wire
 		(pts
-			(xy 408.94 307.34) (xy 410.21 307.34)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "b98c3e1b-1a5e-4146-be8b-e0f2a3e7297c")
-	)
-	(wire
-		(pts
 			(xy 302.26 72.39) (xy 311.15 72.39)
 		)
 		(stroke
@@ -16235,7 +16225,7 @@
 		(uuid "ecf30975-bf57-4165-8860-a53315061cef")
 	)
 	(label "U0TXD"
-		(at 524.51 284.48 270)
+		(at 523.24 284.48 270)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -21226,7 +21216,7 @@
 	)
 	(symbol
 		(lib_id "Connector:TestPoint")
-		(at 524.1854 284.4073 0)
+		(at 523.24 284.48 0)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -21235,7 +21225,7 @@
 		(fields_autoplaced yes)
 		(uuid "7094229e-5f30-46cc-a951-8039194d7f24")
 		(property "Reference" "TP2"
-			(at 526.7254 279.8352 0)
+			(at 525.78 279.9079 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -21244,7 +21234,7 @@
 			)
 		)
 		(property "Value" "TestPoint"
-			(at 526.7254 282.3752 0)
+			(at 525.78 282.4479 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -21253,7 +21243,7 @@
 			)
 		)
 		(property "Footprint" "TestPoint:TestPoint_Pad_D1.0mm"
-			(at 529.2654 284.4073 0)
+			(at 528.32 284.48 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -21262,7 +21252,7 @@
 			)
 		)
 		(property "Datasheet" "~"
-			(at 529.2654 284.4073 0)
+			(at 528.32 284.48 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -21271,7 +21261,7 @@
 			)
 		)
 		(property "Description" "test point"
-			(at 524.1854 284.4073 0)
+			(at 523.24 284.48 0)
 			(effects
 				(font
 					(size 1.27 1.27)
