@@ -5,6 +5,208 @@
 	(uuid "0f9276a0-1239-442e-9bc6-369ba5509075")
 	(paper "A2")
 	(lib_symbols
+		(symbol "Antenna_Shield_1"
+			(pin_numbers
+				(hide yes)
+			)
+			(pin_names
+				(offset 1.016)
+				(hide yes)
+			)
+			(exclude_from_sim no)
+			(in_bom yes)
+			(on_board yes)
+			(property "Reference" "AE2"
+				(at 3.048 -1.524 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(justify left)
+				)
+			)
+			(property "Value" "Antenna_Shield"
+				(at 2.794 -4.064 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(justify left)
+				)
+			)
+			(property "Footprint" "footprints:XCVR_NN03-320"
+				(at 0 2.54 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Datasheet" "~"
+				(at 0 2.54 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Description" "Antenna with extra pin for shielding"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "ki_keywords" "antenna"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(symbol "Antenna_Shield_1_0_1"
+				(arc
+					(start 0 -2.667)
+					(mid -0.8485 -2.1032)
+					(end -0.508 -1.143)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy 0 5.08) (xy 0 -3.81)
+					)
+					(stroke
+						(width 0.254)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy 0 -2.54) (xy 0 0)
+					)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(arc
+					(start 0.508 -1.143)
+					(mid 0.8046 -2.0885)
+					(end 0 -2.667)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy 0.762 -1.905) (xy 2.54 -1.905)
+					)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(circle
+					(center 0.762 -1.905)
+					(radius 0.1778)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type outline)
+					)
+				)
+				(polyline
+					(pts
+						(xy 1.27 5.08) (xy 0 0) (xy -1.27 5.08)
+					)
+					(stroke
+						(width 0.254)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy 2.54 -2.54) (xy 2.54 -1.905)
+					)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+			)
+			(symbol "Antenna_Shield_1_1_1"
+				(pin input line
+					(at 0 -5.08 90)
+					(length 2.54)
+					(name "A"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "3"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin input line
+					(at 2.54 -5.08 90)
+					(length 2.54)
+					(name "Shield"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "2"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+			)
+			(embedded_fonts no)
+		)
 		(symbol "BMP388:BMP388"
 			(pin_names
 				(offset 1.016)
@@ -2126,25 +2328,25 @@
 			(exclude_from_sim no)
 			(in_bom yes)
 			(on_board yes)
-			(property "Reference" "AE"
-				(at -1.905 4.445 0)
+			(property "Reference" "AE1"
+				(at 3.81 1.9051 0)
 				(effects
 					(font
 						(size 1.27 1.27)
 					)
-					(justify right)
+					(justify left)
 				)
 			)
 			(property "Value" "Antenna_Shield"
-				(at -1.905 2.54 0)
+				(at 3.81 -0.6349 0)
 				(effects
 					(font
 						(size 1.27 1.27)
 					)
-					(justify right)
+					(justify left)
 				)
 			)
-			(property "Footprint" ""
+			(property "Footprint" "footprints:XCVR_NN03-320"
 				(at 0 2.54 0)
 				(effects
 					(font
@@ -2288,7 +2490,7 @@
 							)
 						)
 					)
-					(number "1"
+					(number "3"
 						(effects
 							(font
 								(size 1.27 1.27)
@@ -10767,16 +10969,6 @@
 	)
 	(wire
 		(pts
-			(xy 237.49 152.4) (xy 237.49 161.29)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "0474402b-09a1-4009-b560-c441fa92a529")
-	)
-	(wire
-		(pts
 			(xy 363.22 96.52) (xy 368.3 96.52)
 		)
 		(stroke
@@ -11107,7 +11299,7 @@
 	)
 	(wire
 		(pts
-			(xy 237.49 142.24) (xy 237.49 144.78)
+			(xy 237.49 142.24) (xy 237.49 161.29)
 		)
 		(stroke
 			(width 0)
@@ -12247,7 +12439,7 @@
 	)
 	(wire
 		(pts
-			(xy 234.95 152.4) (xy 234.95 158.75)
+			(xy 234.95 142.24) (xy 234.95 158.75)
 		)
 		(stroke
 			(width 0)
@@ -12584,16 +12776,6 @@
 			(type default)
 		)
 		(uuid "77e0ee53-4db4-46a2-a2d3-3320c029d602")
-	)
-	(wire
-		(pts
-			(xy 234.95 142.24) (xy 234.95 144.78)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "7870c996-15bb-4753-9ec1-b3c1ef2dcdf6")
 	)
 	(wire
 		(pts
@@ -15366,7 +15548,7 @@
 		(uuid "4ff439e3-c96d-4ba6-8057-9f357ffb441c")
 	)
 	(label "D+"
-		(at 228.6 80.01 0)
+		(at 227.33 80.01 0)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -16188,7 +16370,7 @@
 		(uuid "d78c4495-1f8b-4f0e-aa3c-5901729701e4")
 	)
 	(label "D-"
-		(at 231.14 74.93 0)
+		(at 229.87 74.93 0)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -18683,6 +18865,7 @@
 		)
 	)
 	(symbol
+		(lib_name "Antenna_Shield_1")
 		(lib_id "Device:Antenna_Shield")
 		(at 115.57 212.09 0)
 		(unit 1)
@@ -18736,7 +18919,7 @@
 				(hide yes)
 			)
 		)
-		(pin "1"
+		(pin "3"
 			(uuid "914a8c08-60bc-445a-841d-68c3dbd31c84")
 		)
 		(pin "2"
@@ -20835,75 +21018,6 @@
 			(project "watch"
 				(path "/0f9276a0-1239-442e-9bc6-369ba5509075"
 					(reference "L2")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "Device:R")
-		(at 234.95 148.59 180)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(uuid "69bdf5ab-51b6-4066-a095-2ce8ab1eb0b9")
-		(property "Reference" "R9"
-			(at 231.14 145.542 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify right)
-			)
-		)
-		(property "Value" "1k"
-			(at 234.95 149.606 90)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify right)
-			)
-		)
-		(property "Footprint" "Resistor_SMD:R_0603_1608Metric"
-			(at 236.728 148.59 90)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" "~"
-			(at 234.95 148.59 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" "Resistor"
-			(at 234.95 148.59 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "2"
-			(uuid "ea515f1c-cfb4-40d4-a6b4-e25cd0b5ba54")
-		)
-		(pin "1"
-			(uuid "dfc24b6c-8471-4460-a219-c8b998fe97b6")
-		)
-		(instances
-			(project "watch"
-				(path "/0f9276a0-1239-442e-9bc6-369ba5509075"
-					(reference "R9")
 					(unit 1)
 				)
 			)
@@ -23471,7 +23585,7 @@
 				(hide yes)
 			)
 		)
-		(pin "1"
+		(pin "3"
 			(uuid "015b584d-f608-48de-8bf7-9b454d61b96e")
 		)
 		(pin "2"
@@ -23696,75 +23810,6 @@
 			(project "watch"
 				(path "/0f9276a0-1239-442e-9bc6-369ba5509075"
 					(reference "D4")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "Device:R")
-		(at 237.49 148.59 180)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(uuid "9a37585b-8051-40a3-bdf1-9f570aaf2017")
-		(property "Reference" "R10"
-			(at 238.506 145.542 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify right)
-			)
-		)
-		(property "Value" "1k"
-			(at 237.49 149.606 90)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify right)
-			)
-		)
-		(property "Footprint" "Resistor_SMD:R_0603_1608Metric"
-			(at 239.268 148.59 90)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" "~"
-			(at 237.49 148.59 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" "Resistor"
-			(at 237.49 148.59 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "2"
-			(uuid "fc5faad6-2531-4267-afaa-5e3f4237279d")
-		)
-		(pin "1"
-			(uuid "f7c0a42a-6513-4d2e-9a65-0000900904fd")
-		)
-		(instances
-			(project "watch"
-				(path "/0f9276a0-1239-442e-9bc6-369ba5509075"
-					(reference "R10")
 					(unit 1)
 				)
 			)
