@@ -1,4 +1,4 @@
-26727565672492092
+26734669021656634
 Audio_Module
 Reverb_BTDR-1H
 Digital Reverberation Unit, http://www.belton.co.kr/inc/downfile.php?seq=17&file=pdf (footprint from http://www.uk-electronic.de/PDF/BTDR-1.pdf)
@@ -105440,6 +105440,34 @@ PQFN50P200X200X80-10N
 0
 10
 10
+footprints
+SOD-123FL
+
+
+0
+2
+2
+footprints
+SOD-123_ONS
+
+SS14FL 
+0
+2
+2
+footprints
+SOD-123_ONS-L
+
+SS14FL 
+0
+2
+2
+footprints
+SOD-123_ONS-M
+
+SS14FL 
+0
+2
+2
 footprints
 SOIC-8_5.23x5.23mm_P1.27mm
 SOIC, 8 Pin (http://www.winbond.com/resource-files/w25q32jv%20revg%2003272018%20plus.pdf#page=68), generated with kicad-footprint-generator ipc_gullwing_generator.py
