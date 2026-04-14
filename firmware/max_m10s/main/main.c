@@ -8,8 +8,8 @@ static const char *TAG = "APP";
 
 /* ── Pin assignment — update to match your schematic ─────────────────────── */
 #define GNSS_I2C_PORT   I2C_NUM_0
-#define GNSS_SDA_PIN    21
-#define GNSS_SCL_PIN    22
+#define GNSS_SDA_PIN    8
+#define GNSS_SCL_PIN    9
 
 void app_main(void)
 {
