@@ -11,9 +11,6 @@
 static const char *TAG = "BMP388";
 #define BMP388_SEA_LEVEL_PA       100000.0
 
-// ═══════════════════════════════════════════════════════════════
-//  I2C LOW-LEVEL HELPERS
-// ═══════════════════════════════════════════════════════════════
 
 static esp_err_t i2c_write_reg(uint8_t addr, uint8_t reg, uint8_t data)
 {
@@ -51,9 +48,6 @@ static esp_err_t i2c_read_regs(uint8_t addr, uint8_t reg,
     return ret;
 }
 
-// ═══════════════════════════════════════════════════════════════
-//  I2C MASTER INIT
-// ═══════════════════════════════════════════════════════════════
 
 esp_err_t bmp388_i2c_master_init(void)
 {
