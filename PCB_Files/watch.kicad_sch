@@ -10052,10 +10052,6 @@
 		(uuid "3d52faa8-c31b-462e-80be-59c2edb831a9")
 	)
 	(no_connect
-		(at 436.88 105.41)
-		(uuid "3dfef78f-9195-4825-ad48-3e7a4c5ed0ab")
-	)
-	(no_connect
 		(at 143.51 300.99)
 		(uuid "4dd654ab-8a16-41d4-ad28-1e38ffbd2ed1")
 	)
@@ -22809,7 +22805,6 @@
 		(in_bom yes)
 		(on_board yes)
 		(dnp no)
-		(fields_autoplaced yes)
 		(uuid "9bec4b77-875c-4645-bec6-5e4b7d4a3e0c")
 		(property "Reference" "C1"
 			(at 48.26 77.4699 0)
