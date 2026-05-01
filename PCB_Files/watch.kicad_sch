@@ -8245,7 +8245,7 @@
 			)
 			(embedded_fonts no)
 		)
-		(symbol "Transistor_BJT:BC847"
+		(symbol "Transistor_BJT:SS8050"
 			(pin_names
 				(offset 0)
 				(hide yes)
@@ -8262,7 +8262,7 @@
 					(justify left)
 				)
 			)
-			(property "Value" "BC847"
+			(property "Value" "SS8050"
 				(at 5.08 0 0)
 				(effects
 					(font
@@ -8272,7 +8272,7 @@
 				)
 			)
 			(property "Footprint" "Package_TO_SOT_SMD:SOT-23"
-				(at 5.08 -1.905 0)
+				(at 5.08 -7.366 0)
 				(effects
 					(font
 						(size 1.27 1.27)
@@ -8282,8 +8282,8 @@
 					(hide yes)
 				)
 			)
-			(property "Datasheet" "http://www.infineon.com/dgdl/Infineon-BC847SERIES_BC848SERIES_BC849SERIES_BC850SERIES-DS-v01_01-en.pdf?fileId=db3a304314dca389011541d4630a1657"
-				(at 0 0 0)
+			(property "Datasheet" "http://www.secosgmbh.com/datasheet/products/SSMPTransistor/SOT-23/SS8050.pdf"
+				(at 5.08 -4.826 0)
 				(effects
 					(font
 						(size 1.27 1.27)
@@ -8292,7 +8292,16 @@
 					(hide yes)
 				)
 			)
-			(property "Description" "0.1A Ic, 45V Vce, NPN Transistor, SOT-23"
+			(property "Description" "General Purpose NPN Transistor, 1.5A Ic, 25V Vce, SOT-23"
+				(at 34.036 -2.286 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Sim.Device" "NPN"
 				(at 0 0 0)
 				(effects
 					(font
@@ -8301,7 +8310,16 @@
 					(hide yes)
 				)
 			)
-			(property "ki_keywords" "NPN Small Signal Transistor"
+			(property "Sim.Pins" "1=B 2=E 3=C"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "ki_keywords" "SS8050 NPN Transistor"
 				(at 0 0 0)
 				(effects
 					(font
@@ -8319,7 +8337,7 @@
 					(hide yes)
 				)
 			)
-			(symbol "BC847_0_1"
+			(symbol "SS8050_0_1"
 				(polyline
 					(pts
 						(xy -2.54 0) (xy 0.635 0)
@@ -8356,7 +8374,7 @@
 					)
 				)
 			)
-			(symbol "BC847_1_1"
+			(symbol "SS8050_1_1"
 				(polyline
 					(pts
 						(xy 0.635 0.635) (xy 2.54 2.54)
@@ -16435,6 +16453,100 @@
 		)
 	)
 	(symbol
+		(lib_id "Transistor_BJT:SS8050")
+		(at 332.74 95.25 0)
+		(mirror x)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "154cfba5-f9a5-490a-9c03-051e7d27af60")
+		(property "Reference" "Q6"
+			(at 337.82 96.5201 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "SS8050"
+			(at 337.82 93.9801 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" "Package_TO_SOT_SMD:SOT-23"
+			(at 337.82 87.884 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+					(italic yes)
+				)
+				(justify left)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "http://www.secosgmbh.com/datasheet/products/SSMPTransistor/SOT-23/SS8050.pdf"
+			(at 337.82 90.424 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+				(hide yes)
+			)
+		)
+		(property "Description" "General Purpose NPN Transistor, 1.5A Ic, 25V Vce, SOT-23"
+			(at 366.776 92.964 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Sim.Device" "NPN"
+			(at 332.74 95.25 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Sim.Pins" "1=B 2=E 3=C"
+			(at 332.74 95.25 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "2"
+			(uuid "9b9d0ac8-fc02-41a7-867e-1beafa6d7d62")
+		)
+		(pin "3"
+			(uuid "e7c898c4-5041-457a-b2ed-31a0991cfd91")
+		)
+		(pin "1"
+			(uuid "29e56e77-b7d4-425e-b7a7-1a69360373ab")
+		)
+		(instances
+			(project "watch"
+				(path "/0f9276a0-1239-442e-9bc6-369ba5509075"
+					(reference "Q6")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
 		(lib_id "MCU_Espressif:ESP32-PICO-D4")
 		(at 99.06 129.54 0)
 		(unit 1)
@@ -17239,82 +17351,6 @@
 			(project "watch"
 				(path "/0f9276a0-1239-442e-9bc6-369ba5509075"
 					(reference "C4")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "Transistor_BJT:BC847")
-		(at 416.56 345.44 0)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "254de7d5-74af-4327-828c-4e9294a377f2")
-		(property "Reference" "Q8"
-			(at 421.64 344.1699 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Value" "BC847"
-			(at 421.64 346.7099 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Footprint" "Package_TO_SOT_SMD:SOT-23"
-			(at 421.64 347.345 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-					(italic yes)
-				)
-				(justify left)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" "http://www.infineon.com/dgdl/Infineon-BC847SERIES_BC848SERIES_BC849SERIES_BC850SERIES-DS-v01_01-en.pdf?fileId=db3a304314dca389011541d4630a1657"
-			(at 416.56 345.44 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-				(hide yes)
-			)
-		)
-		(property "Description" "0.1A Ic, 45V Vce, NPN Transistor, SOT-23"
-			(at 416.56 345.44 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "3"
-			(uuid "829b4b19-fb1c-4b7c-85d9-8bf66177d0a7")
-		)
-		(pin "1"
-			(uuid "c9d864f9-5275-4674-95b8-3e9da4503af9")
-		)
-		(pin "2"
-			(uuid "83a5e9b1-6b15-43ae-9a56-9ced0eb42bc4")
-		)
-		(instances
-			(project "watch"
-				(path "/0f9276a0-1239-442e-9bc6-369ba5509075"
-					(reference "Q8")
 					(unit 1)
 				)
 			)
@@ -21154,6 +21190,100 @@
 		)
 	)
 	(symbol
+		(lib_id "Transistor_BJT:SS8050")
+		(at 416.56 345.44 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "76d55c60-4431-4e37-b4d6-1944a3a3cbb0")
+		(property "Reference" "Q3"
+			(at 421.64 344.1699 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "SS8050"
+			(at 421.64 346.7099 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" "Package_TO_SOT_SMD:SOT-23"
+			(at 421.64 352.806 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+					(italic yes)
+				)
+				(justify left)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "http://www.secosgmbh.com/datasheet/products/SSMPTransistor/SOT-23/SS8050.pdf"
+			(at 421.64 350.266 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+				(hide yes)
+			)
+		)
+		(property "Description" "General Purpose NPN Transistor, 1.5A Ic, 25V Vce, SOT-23"
+			(at 450.596 347.726 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Sim.Device" "NPN"
+			(at 416.56 345.44 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Sim.Pins" "1=B 2=E 3=C"
+			(at 416.56 345.44 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "2"
+			(uuid "46958c50-d8d6-438e-8c3b-9e3a64e5799d")
+		)
+		(pin "3"
+			(uuid "a20269cf-e3c2-4767-8d35-a3754d5a89b6")
+		)
+		(pin "1"
+			(uuid "1a88035c-6303-46a8-a59b-51cfcf799ebb")
+		)
+		(instances
+			(project "watch"
+				(path "/0f9276a0-1239-442e-9bc6-369ba5509075"
+					(reference "Q3")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
 		(lib_id "power:GND")
 		(at 537.21 298.45 0)
 		(unit 1)
@@ -22424,82 +22554,6 @@
 			(project "watch"
 				(path "/0f9276a0-1239-442e-9bc6-369ba5509075"
 					(reference "D1")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "Transistor_BJT:BC847")
-		(at 331.47 72.39 0)
-		(mirror x)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(uuid "9098a80b-c0fc-4cc8-a966-56e46e78e104")
-		(property "Reference" "Q2"
-			(at 336.55 73.6601 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Value" "BC847"
-			(at 336.55 71.1201 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Footprint" "Package_TO_SOT_SMD:SOT-23"
-			(at 336.55 70.485 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-					(italic yes)
-				)
-				(justify left)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" "http://www.infineon.com/dgdl/Infineon-BC847SERIES_BC848SERIES_BC849SERIES_BC850SERIES-DS-v01_01-en.pdf?fileId=db3a304314dca389011541d4630a1657"
-			(at 331.47 72.39 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-				(hide yes)
-			)
-		)
-		(property "Description" "0.1A Ic, 45V Vce, NPN Transistor, SOT-23"
-			(at 331.47 72.39 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "1"
-			(uuid "fa1737a0-2a76-4ca2-a828-9b98de10ea18")
-		)
-		(pin "3"
-			(uuid "c22722f5-99f1-481c-b1a6-d7aeb4fd662a")
-		)
-		(pin "2"
-			(uuid "13267f8c-0749-4916-9038-06f084070106")
-		)
-		(instances
-			(project "watch"
-				(path "/0f9276a0-1239-442e-9bc6-369ba5509075"
-					(reference "Q2")
 					(unit 1)
 				)
 			)
@@ -28152,82 +28206,6 @@
 		)
 	)
 	(symbol
-		(lib_id "Transistor_BJT:BC847")
-		(at 332.74 95.25 0)
-		(mirror x)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(uuid "f431ca35-92ad-4d6d-acdb-0d33b2bc59c0")
-		(property "Reference" "Q1"
-			(at 337.82 96.5201 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Value" "BC847"
-			(at 337.82 93.9801 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Footprint" "Package_TO_SOT_SMD:SOT-23"
-			(at 337.82 93.345 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-					(italic yes)
-				)
-				(justify left)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" "http://www.infineon.com/dgdl/Infineon-BC847SERIES_BC848SERIES_BC849SERIES_BC850SERIES-DS-v01_01-en.pdf?fileId=db3a304314dca389011541d4630a1657"
-			(at 332.74 95.25 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-				(hide yes)
-			)
-		)
-		(property "Description" "0.1A Ic, 45V Vce, NPN Transistor, SOT-23"
-			(at 332.74 95.25 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "2"
-			(uuid "24b76d55-73e8-42c7-b6e5-4c0a63c15bde")
-		)
-		(pin "1"
-			(uuid "4cb82c9f-c88c-44bc-9074-e2a6ff1b0b63")
-		)
-		(pin "3"
-			(uuid "91493a6f-3725-48b7-8d3e-bb1e8f2a1284")
-		)
-		(instances
-			(project "watch"
-				(path "/0f9276a0-1239-442e-9bc6-369ba5509075"
-					(reference "Q1")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
 		(lib_id "power:GND")
 		(at 36.83 372.11 0)
 		(unit 1)
@@ -28433,6 +28411,100 @@
 			(project "watch"
 				(path "/0f9276a0-1239-442e-9bc6-369ba5509075"
 					(reference "D8")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Transistor_BJT:SS8050")
+		(at 331.47 72.39 0)
+		(mirror x)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "f78b9154-3fe9-43cc-acbd-b389d39ac2ce")
+		(property "Reference" "Q7"
+			(at 336.55 73.6601 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "SS8050"
+			(at 336.55 71.1201 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" "Package_TO_SOT_SMD:SOT-23"
+			(at 336.55 65.024 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+					(italic yes)
+				)
+				(justify left)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "http://www.secosgmbh.com/datasheet/products/SSMPTransistor/SOT-23/SS8050.pdf"
+			(at 336.55 67.564 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+				(hide yes)
+			)
+		)
+		(property "Description" "General Purpose NPN Transistor, 1.5A Ic, 25V Vce, SOT-23"
+			(at 365.506 70.104 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Sim.Device" "NPN"
+			(at 331.47 72.39 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Sim.Pins" "1=B 2=E 3=C"
+			(at 331.47 72.39 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "2"
+			(uuid "c6e6a3ef-4ec3-4a4c-99eb-2a9f07bb8b81")
+		)
+		(pin "3"
+			(uuid "14bef791-305e-4f42-9ee6-d8a44c0bc9fe")
+		)
+		(pin "1"
+			(uuid "f0071a43-a0a8-409e-a1b0-4740258624d7")
+		)
+		(instances
+			(project "watch"
+				(path "/0f9276a0-1239-442e-9bc6-369ba5509075"
+					(reference "Q7")
 					(unit 1)
 				)
 			)
