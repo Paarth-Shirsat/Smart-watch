@@ -1,0 +1,6 @@
+config BOARD_WATCH_ESP32
+	select SOC_ESP32
+	select SOC_SERIES_ESP32
+
+config BOARD
+	default "watch_esp32"

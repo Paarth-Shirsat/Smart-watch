@@ -1,0 +1,15 @@
+identifier: watch_esp32/esp32/procpu
+name: Custom Smartwatch (ESP32-WROOM-32 prototype)
+type: mcu
+arch: xtensa
+ram: 520
+flash: 4096
+supported:
+  - i2c
+  - spi
+  - uart
+  - gpio
+  - wifi
+toolchain:
+  - zephyr
+  - espressif
