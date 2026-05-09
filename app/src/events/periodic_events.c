@@ -30,4 +30,4 @@ static int periodic_init(void){
     return 0;
 }
 
-SYS_INIT(periodic_init, APPLICATION, CONFIG_APPLICATION_INIT_PRIORITY);
+SYS_INIT(periodic_init, APPLICATION, 90);

@@ -1,5 +1,5 @@
-identifier: watch_esp32/esp32/procpu
-name: Custom Smartwatch (ESP32-WROOM-32 prototype)
+identifier: watch_esp32/esp32s3/procpu
+name: Custom Smartwatch (ESP32-S3 prototype)
 type: mcu
 arch: xtensa
 ram: 520

@@ -1,10 +1,11 @@
 /dts-v1/;
-#include <espressif/esp32/esp32_wroom_32ue_n4.dtsi>
+#include <espressif/esp32s3/esp32s3_wroom_n4.dtsi>
 #include "watch_esp32-pinctrl.dtsi"
-#include <espressif/partitions_0x1000_amp.dtsi>
+#include <espressif/partitions_0x0_amp.dtsi>
+#include <zephyr/dt-bindings/sensor/lsm6dso.h>
 
 / {
-    model = "Custom Smartwatch (WROOM-32 prototype)";
+    model = "Custom Smartwatch (ESP32-S3 prototype)";
     compatible = "custom,watch-esp32";
 
     chosen {
@@ -16,17 +17,68 @@
     };
 };
 
-&uart0 {
+&uart0{
     status = "okay";
     current-speed = <115200>;
     pinctrl-0 = <&uart0_default>;
     pinctrl-names = "default";
 };
 
-&gpio0 {
+//GNSS
+&uart1{
+    status = "okay";
+    current-speed = <9600>;
+    pinctrl-0 = <&uart1_default>;
+    pinctrl-names = "default";
+};
+
+&gpio0{
     status = "okay";
 };
 
-&gpio1 {
+&gpio1{
     status = "okay";
+};
+
+&i2c0{
+    status = "okay";
+    clock-frequency = <I2C_BITRATE_FAST>;
+    pinctrl-0 = <&i2c0_default>;
+    pinctrl-names = "default";
+
+    bmp388: bmp388@76 {
+        compatible = "bosch,bmp388";
+        reg = <0x76>;
+        int-gpios = <&gpio0 4 GPIO_ACTIVE_HIGH>;
+    };
+
+    drv2605: drv2605@5a {
+        compatible = "ti,drv2605";
+        reg = <0x5a>;
+        actuator-mode = "ERM";
+    };
+};
+
+&spi2{
+    status = "okay";
+    #address-cells = <1>;
+    #size-cells = <0>;
+    pinctrl-0 = <&spim2_default>;
+    pinctrl-names = "default";
+    cs-gpios = <&gpio0 10 GPIO_ACTIVE_LOW>, //index 0 = IMU CS
+               <&gpio0 9  GPIO_ACTIVE_LOW>; //index 1 = Display CS
+
+    lsm6dso: lsm6dso@0 {
+        compatible = "st,lsm6dso";
+        reg = <0>;
+        spi-max-frequency = <10000000>;
+        accel-range = <2>;
+        accel-odr   = <4>;
+        gyro-range  = <6>;
+        gyro-odr    = <4>;
+        irq-gpios   = <&gpio0 4 GPIO_ACTIVE_HIGH>;
+        int-pin     = <1>;
+        tap-mode    = <1>;
+        tap-threshold = <4>, <4>, <4>;
+    };
 };

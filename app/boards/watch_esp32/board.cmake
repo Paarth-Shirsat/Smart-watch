@@ -1,1 +1,1 @@
-include(${ZEPHYR_BASE}/boards/espressif/esp32_devkitc/board.cmake)
+include(${ZEPHYR_BASE}/boards/espressif/esp32s3_devkitc/board.cmake)

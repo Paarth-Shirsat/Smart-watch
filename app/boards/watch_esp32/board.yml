@@ -1,6 +1,6 @@
 board:
   name: watch_esp32
-  full_name: Custom Smartwatch WROOM-32 Prototype
+  full_name: Custom Smartwatch (ESP32-S3 prototype)
   vendor: espressif
   socs:
-  - name: esp32
+  - name: esp32s3
