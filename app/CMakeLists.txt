@@ -7,5 +7,7 @@ target_sources(app PRIVATE
     src/main.c
     src/events/periodic_events.c
     src/events/imu_events.c
+    src/events/baro_events.c
     src/sensors/imu_sensor.c
+    src/sensors/baro_sensor.c
 )
